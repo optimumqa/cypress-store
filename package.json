@@ -1,6 +1,6 @@
 {
   "name": "@optimumqa/cypress-store",
-  "version": "0.1.1",
+  "version": "0.0.0-development",
   "description": "Save and share variables between tests",
   "main": "src/index.js",
   "files": [
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/optimumqa/cypress-store.git"
+    "url": "https://github.com/optimumqa/cypress-store.git"
   },
   "keywords": [
     "cypress",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/optimumqa/cypress-store#readme",
   "devDependencies": {
-    "semantic-release": "19.0.5"
+    "semantic-release": "^19.0.5"
   },
   "scripts": {
     "semantic-release": "semantic-release"
