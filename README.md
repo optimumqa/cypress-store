@@ -9,6 +9,10 @@
   <img alt="Javascript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" target="_blank" />
 </a>
 
+<div align="center">
+This plugin enables you to <b>store</b> and <b>share</b> values between multiple spec files.
+</div>
+
 ## Installation
 
 ```sh
@@ -20,6 +24,8 @@ npm install @optimumqa/cypress-store
 ### Cypress version >= 10
 
 ```js
+// ./cypress.config.js
+
 import { defineConfig } from 'cypress'
 
 const finalConfig = defineConfig({
@@ -34,7 +40,11 @@ const finalConfig = defineConfig({
 })
 ```
 
+### Cypress version < 10
+
 ```js
+// ./cypress/plugins/index.js
+
 module.exports = (on, config) => {
   config = require('@optimumqa/cypress-store')(on, config)
 
@@ -58,8 +68,8 @@ Example of setting a new item into 'CommonStore'.
 cy.task('setItem', {
   storeId: 'MyStoreForUsefulStuff',
   item: {
-    name: 'token',
-    value: 'foo',
+    name: 'foo',
+    value: 'bar',
   },
 })
 ```
@@ -72,10 +82,12 @@ Example of getting an item from a store:
 cy.task('getItem', {
   storeId: 'MyStoreForUsefulStuff',
   item: {
-    name: 'token',
+    name: 'foo',
   },
 }).then((item) => {
-  console.log(item)
+  console.log(item) // { name: 'token, value: 'foo' }
+  console.log(item.name) // foo
+  console.log(item.value) // bar
 })
 ```
 
