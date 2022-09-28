@@ -1,0 +1,25 @@
+{
+  "name": "@optimumqa/cypress-store",
+  "version": "0.1.1",
+  "description": "Save and share variables between tests",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/optimumqa/cypress-store.git"
+  },
+  "keywords": [
+    "cypress",
+    "cypress-plugin",
+    "share",
+    "variables"
+  ],
+  "author": "Optimum QA <business.optimumqa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/optimumqa/cypress-store/issues"
+  },
+  "homepage": "https://github.com/optimumqa/cypress-store#readme"
+}
