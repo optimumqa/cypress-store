@@ -55,4 +55,6 @@ class Store {
   }
 }
 
-module.exports = Store
+module.exports = (on, config) => {
+  const store = new Store(on, config)
+}
