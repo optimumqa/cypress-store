@@ -63,7 +63,7 @@ Below is an example saving a token inside one spec, and re-use it inside another
 
 You can have infinite stores.
 
-Example of setting a new item into 'CommonStore'.
+Example of setting a new item into 'MyStoreForUsefulStuff'.
 
 > If the store does not exist, it will be automatically created:
 
